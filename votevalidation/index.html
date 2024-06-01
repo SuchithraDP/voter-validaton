@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewreport" content="width=device-width, initial-scale=1.0">
+        <title>vote validator</title>
+    
+        </head>
+        <body>
+            <div>
+                <label for="">Name:</label>
+                <input type="text" placeholder="you should enter your name" id="name">
+                <label for="">Age:</label1>
+                <input type="number" name= "" id="age" placeholder="Enter your Age">
+                <label for="">Country:</label>
+                <input type="text" placeholder="Enter your country" id="country">
+                <button type="submit" onclick="vote()">submit</button>
+                <p id="result"></p>
+        </div>
+        <script>
+            function vote() {
+                var name =document.getElementById("name").value;
+                var age =document.getElementById("age").value;
+                var result =document.getElementById("result");
+                var country =document.getElementById("country").value;
+                 if (age>=18){
+                      if(country==="INDIA" || country==="india") {
+                          result.innerText=name+"shabash betta you are eligigible to vote";
+                }else{
+                          result.innerText=name+"sorry you are not belong to India";
+                }
+        }else{
+            resultElement.innerText = name.value+"you are still a child";
+        }
+    }
+        </script>
+        </form> 
+        <style>
+            div{
+                height: 150px;
+                width: 500px;
+                background-repeat: repeat;
+            }
+         </style>
+    </body>
+    </html>
